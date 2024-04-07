@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="mainocntianer">
+
+        <div class="inner">
+            <a style="left: 0% ;" onclick="   change_potion(this,3)"  class="chiled1 active_card">a</a>
+            <a style="left: 150% ;" onclick=" change_potion(this,2)" class="chiled2">a</a>
+            <a style="left: 300% ;" onclick=" change_potion(this,1)" class="chiled3">a</a>
+            <a style="left: 450%;" onclick="  change_potion(this,0)" class="chiled4">a</a>
+        </div>
+
+    </div>
+    
+
+    <style>
+
+        .mainocntianer{
+            height: 100px;
+            width: 20%;
+            background: aqua;
+            position: relative;
+            /* overflow-y: visible;
+            overflow-x: scroll;
+             */
+             overflow-x: hidden;
+             /* overflow-y: hidden ; */
+             /* overflow: scroll; */
+             &::-webkit-scrollbar {
+                        display: none;
+            }
+            display: flex;
+            align-items: center;
+            padding: 10px;  
+        }
+            .inner{
+                height: 70%;
+                width: 40px;
+                background: red;
+                position: relative;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                
+
+                .active_card{
+                    background: green;
+                    scale: 1.2;
+                }
+                
+                
+                a{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: blue;
+                    transition: 800ms linear;
+                    cursor: pointer;
+                }
+                .chiled1{
+                    left: 0%;
+                }
+                .chiled2{
+                    left: 150%;
+                }
+                .chiled3{
+                    left: 300%;
+                }
+                .chiled4{
+                    left: 450%;
+                }
+            }
+            
+        
+
+    </style>
+
+
+    <script>
+
+        function change_potion(temp1,temp){
+
+            con =  document.getElementsByClassName('inner')[0].children;
+            array_list = [-450,-300,-150,0,150,300,450];
+
+            document.getElementsByClassName('active_card')[0].classList.remove('active_card');
+            console.log(con);
+            const conArray = Array.from(con);
+            conArray.forEach(element => {
+                element.style.left = `${array_list[temp]}%`;
+
+
+                if(element==temp1){
+                    element.classList.add('active_card')   ; 
+                }
+
+                console.log(element)
+                
+                temp+=1;
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

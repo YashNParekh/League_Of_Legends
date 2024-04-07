@@ -1,0 +1,395 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+html {
+    font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
+    scroll-behavior: smooth;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    font-family: "Mono space" ,monospace;
+    color: white;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+    &:focus {
+        /* reemove default  outline */
+        outline: none; 
+    }
+}
+
+
+
+
+
+
+ 
+main{
+    
+    height: 100%;
+    width: 100%;
+   
+}
+
+
+#outer_nav_bar_container{
+    position: fixed;
+    width: 100%;
+    padding: 7px;
+    z-index: 77777;
+    /* padding-right: 3vh; */
+}
+
+#inner_nav_bar_container{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgb(95, 96, 104);
+    border-radius: 10px;
+    background-color: rgba(240, 240, 240, 0.629);
+    /* background-color: rgba(0, 0, 0, 0.641) ; */
+    
+    /* background: linear-gradient( to right, #190019,#2B124C,#522B5B,#854F6C,#DFB6B2,#FBE4D8); */
+    /* background: linear-gradient( to right, #364649a9,#708f96b1); */
+
+    border-left: 0;
+    border-right: 0;
+    box-shadow: 0px 0px 10px rgba(53, 43, 43, 0.616);
+
+    &>#logo_container{
+
+        width: 90px;
+        height: 100%;
+        /* background-color: black; */
+        
+        &>a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;    
+            padding: 12px;
+        &>img{
+            object-fit: cover;
+        }   
+        }
+    }
+
+    &>#progress_bar_Toggle_container{
+        
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &>#progress_show_container{
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            
+            &>#progress_bar_scroll{
+
+                width: 0%;
+                height: 70%;
+                border-right: 1px solid;
+                position: absolute;
+                background: rgba(50, 48, 48, 0.127);
+                }
+            
+
+            &>#show_scroll_section{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                
+                &>ul{
+                    width: 100%;
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-evenly;
+                    li{
+                        font-size: 1.3rem;
+                        margin: 0 2.5%;
+                        a{
+                            color: 88888;
+                            filter: invert();
+                            font-weight: bolder;
+                        }
+                        }
+                    }
+                
+                }
+            
+
+            }
+
+
+/* audio and its button css */
+    #nav_bar_toggle_button{
+                height: 100%;
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                &>.button{
+                    /* her i use % in inner div . it means we 
+                    must use the height 
+                    */
+                    cursor: pointer;
+                    background: transparent;
+                    height: 45px;
+                    width: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    gap: 10px;
+                    flex-direction: column;
+                    overflow: hidden;
+                    margin-left: 20%;
+                    
+                    &>.line>div{
+                        /* i write her width 
+                            beaucse if i give widht in inline style then it not work for hover 
+                            beause it is not overide 
+                        */
+                        position: relative;
+                        left: 100%;
+                    }
+                }   
+            }
+        }
+    }
+
+
+
+/* here the css for music toggle */
+    .back_music_control{
+        position: fixed;
+        height: 40px;
+        width:  40px;
+        top: 80%;
+        right: 2.0%;
+        z-index: 88888;
+
+
+        &>.music_toggle_button{
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            border-radius: 40%;
+            /* box-shadow:  0px 0px 10px rgba(199, 128, 229, 0.316); */
+
+
+            &>span{
+                background:linear-gradient(#da3069cd,#14479fb8) ;
+                height: 55%;
+                width: 5%;
+                margin: 1.4px;
+                scale: 1 0.4 ;    
+                animation: none;
+                }
+                
+            }   
+        }
+
+
+
+
+
+
+
+
+/* animation for msuic bars  */
+@keyframes music_bar {
+            0%,50%{
+                scale:1 0.2; 
+            }
+            100%,80%{
+                scale:1 0.7; 
+            }
+            30%,67%{
+                scale:1 0.5; 
+            }
+            20%,90%{
+                scale:1 0.9; 
+            }
+        }
+
+
+
+
+/* navbar css */
+
+
+#main_nav_bar_container{
+
+    display: none;
+
+    height: 100vh;
+    min-height: 650px;
+    width: 100vw;
+    position: fixed; 
+    z-index: 88887;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.667);
+
+    &>#first_inner_main_conatiner{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        &>#second_inner_main_conatiner{
+            position: absolute;
+            top: 3%;
+            right: 2%;
+            height: 95%;
+            width: 40%;
+            min-width: 500px;
+            max-width: 590px;
+            border-radius:20px ;
+            background-color: black;
+            overflow: hidden;
+            
+            &>#third_inner_main_conatiner{
+                    position: relative;
+                    height: 100%;
+                    border-right: 1px solid rgba(255, 255, 255, 0.7);
+                    color: transparent;
+                    overflow: auto;
+                    width: 80%;
+                    left: 5%;
+                    /* for hide scroll bar if it ocure */
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                
+                    &>ul{
+                        margin-top: 8%;
+                        margin-left: 2%;
+                        height: fit-content;
+                        width: 100%;
+                        color: white;   
+                        font-size: 3.4rem;
+                        font-weight: bolder;
+                        
+
+
+                        &>li{
+                            list-style: none;
+                            display: block;
+                            width: fit-content;
+                            padding-right: 10px;
+                            border-radius: 2px;
+                            transition: 100ms ;
+                            margin: 10px 0;
+                            &::after{
+                                content: '';    
+                                display: inline-block;
+                                position: absolute;
+                                height: 20px;
+                                width: 20px;
+                                margin:  30px 0%;
+                                rotate: 45deg;
+                                background: black;  
+                                border-bottom-right-radius:100% ;
+                                border-top-right-radius:100% ;
+                            }  
+                        }
+
+
+                        &>.active{
+                            background-color: orange;
+                            color: black;
+                        }
+                        &>.list_item:not(.active):hover{
+                            background: white;
+                            &>a{
+                                color: black;
+                            }
+                        }
+                        
+                    }
+
+            }
+
+            .nav_close{
+                height: 12%;
+                width: 14.9%;
+                position: absolute;
+                right: 0%;
+                top: 0;
+                background: transparent;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+                svg{
+                    height: 100%;
+                    width: 20%;
+
+
+                    &>.line1{
+                        stroke: white;
+                        stroke-dasharray: 6.3383px 6.3383px ;
+                        stroke-dashoffset: 0;
+                    }
+                    &>.line2{
+                        stroke: white;
+                        stroke-dasharray: none;
+                        stroke-dashoffset: 0;
+                    }
+
+                   
+                }
+                
+                &>svg:hover>.line1{
+                    animation: stokeanimation 0.22s linear   alternate   ;
+                }
+                &>svg:hover>.line2{
+                    animation: stokeanimation 0.22s linear   alternate  .11s  ;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes stokeanimation {
+    0%{
+        stroke-dasharray: 0% 100%;
+        stroke-dashoffset: 100%;
+    }
+    100%{ 
+        stroke-dasharray: 100% 100%;
+        stroke-dashoffset: 100%;
+    }
+} 
