@@ -121,6 +121,7 @@ function button_unfill(){
 }
 
 
+var music = document.getElementById('back_music');
 
 function music_play(){
 
@@ -130,9 +131,10 @@ function music_play(){
         'music_bar 2s ease-in infinite -3.8s alternate ',
         'music_bar 2s ease-in infinite -1.2s alternate '
     ]
-    var music = document.getElementById('back_music');
     var lines = document.querySelectorAll('.music_toggle_button>span');
     
+
+
     var audiolist = document.querySelectorAll('.audio_effects');
 
     audiolist.forEach((element)=>{
@@ -157,6 +159,8 @@ function music_play(){
         music.pause();
     }
 
-     
-
 }
+
+
+
+music_play()
