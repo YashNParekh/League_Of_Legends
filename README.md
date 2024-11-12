@@ -39,9 +39,6 @@ Check out the live version of this project: [League of Legends Homepage Clone](h
 - **CSS3**: For styling and animations.
 ## Screenshots
 
-## Demo Video
-
-[Download the demo video](https://github.com/YashNParekh/League_Of_Legends/blob/main/Video/3.mp4)
 
 ## League of Legends Homepage
 ![League of Legends Homepage](https://github.com/YashNParekh/League_Of_Legends/blob/main/Img/demo/Screenshot%202024-11-12%20204520.png)
