@@ -37,8 +37,10 @@ Check out the live version of this project: [League of Legends Homepage Clone](h
 
 - **HTML5**: For the structure of the web page.
 - **CSS3**: For styling and animations.
-  
-
+## Screenshots
+![League of Legends Homepage](https://league-of-legends-nine.vercel.app/screenshot.png)
+![Project Screenshot](https://github.com/YashNParekh/League_Of_Legends/blob/main/Img/demo/Screenshot%202024-11-12%20204703.png)
+![Project Screenshot](https://github.com/YashNParekh/League_Of_Legends/blob/main/Img/demo/Screenshot%202024-11-12%20204714.png)
 
 
   
