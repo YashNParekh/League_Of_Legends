@@ -1,4 +1,25 @@
 
+// JavaScript for lazy loading
+const lazyVideos = document.querySelectorAll('.lazy');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const video = entry.target;
+      video.src = video.dataset.src;
+      video.classList.remove('lazy');
+      video.autoplay = true;
+      video.muted = true;
+      video.loop = true;
+      observer.unobserve(video);
+    }
+  });
+});
+
+lazyVideos.forEach((video) => {
+  observer.observe(video);
+});
+
 
 function updateScaling_svg(id_for_resizing,which_svg){
     

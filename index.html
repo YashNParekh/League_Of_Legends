@@ -9,6 +9,20 @@
     <link rel="icon" href="Img/mainLogo.png">
     <!-- script for gsap  -->
 
+
+        <!-- In the HTML <head> section -->
+    <link rel="preload" href="Videos/1.mp4" as="video">
+    <link rel="preload" href="Img/ss2020_kaisa_1920x1080.mp4" as="video">
+    <link rel="preload" href="Videos/3rdbg1.mp4" as="video">
+    <link rel="preload" href="Videos/3rdbg2.mp4" as="video">
+    <link rel="preload" href="Videos/3rdbg3.mp4" as="video">
+    <link rel="preload" href="Videos/ch1.mp4" as="video">
+    <link rel="preload" href="Videos/ch2.mp4" as="video">
+    <link rel="preload" href="Videos/ch3.mp4" as="video">
+    <link rel="preload" href="Videos/ch4.mp4" as="video">
+    <link rel="preload" href="Videos/ch5.mp4" as="video">
+    <link rel="preload" href="Videos/ch6.mp4" as="video">
+
     
 </head>
 <body>
@@ -156,20 +170,14 @@
     <div class="main_vedio_logo_container">
 
         <div class="first_vedio_with_blur">
-            <video loop autoplay muted >
-                <source src="Video\1.mp4" type="Video/mp4">
-                Your browser does not support the video tag.
-              </video>    
+            <video  id="video1" class="lazy" data-src="Videos/1.mp4"></video>    
         </div>
 
         <div class="second_video_with_logo_outer">
         <div class="second_video_with_logo">
 
             <div class="video_container">
-                <video loop autoplay muted >
-                    <source src="Video\1.mp4" type="Video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+                <video id="video1" class="lazy" data-src="Videos/1.mp4"></video>
             </div>
             
             
@@ -477,47 +485,29 @@
                                             <div class="Vedio_champinfo_innerr">
                 
                                                 <div class="ch_v active_champ_vedio">
-                                                <video  loop autoplay muted  >
-                                                    <source src="Video/ch1.mp4" type="Video/mp4">
-                                                    Your browser does not support the video tag.
-                                                  </video>
+                                                    <video id="video5" class="lazy" data-src="Videos/ch1.mp4"></video>
                                                 </div>
                                                 
                                                 <div class="ch_v ">
-                                                  <video  loop  muted class="" >
-                                                    <source src="Video/ch2.mp4" type="Video/mp4">
-                                                    Your browser does not support the video tag.
-                                                  </video>
+                                                    <video id="video6" class="lazy" data-src="Videos/ch2.mp4"></video>
                                                 </div>
                 
                                                   
                                                 <div class="ch_v">
-                                                <video  loop  muted  >
-                                                    <source src="Video/ch3.mp4"Video/mp4">
-                                                    Your browser does not support the video tag.
-                                                  </video>
+                                                    <video id="video6" class="lazy" data-src="Videos/ch3.mp4"></video>
                                                 </div>
                 
                                                 <div class="ch_v">
-                                                <video loop  muted  >
-                                                    <source src="Video/ch4.mp4" type="Video/mp4">
-                                                    Your browser does not support the video tag.
-                                                  </video>
+                                                    <video id="video6" class="lazy" data-src="Videos/ch4.mp4"></video>
                                                 </div>
                                                   
                                                 <div class="ch_v">
-                                                <video loop  muted  >
-                                                    <source src="Video/ch5.mp4" type="Video/mp4">
-                                                    Your browser does not support the video tag.
-                                                  </video>
+                                                    <video id="video6" class="lazy" data-src="Videos/ch5.mp4"></video>
                                                 </div>
                 
                 
                                                 <div class="ch_v">
-                                                  <video loop  muted  >
-                                                      <source src="Video/ch6.mp4" type="Video/mp4">
-                                                      Your browser does not support the video tag.
-                                                    </video>
+                                                    <video id="video6" class="lazy" data-src="Videos/ch6.mp4"></video>
                                                 </div>
                                                 
                                                 <div class="border_with_svg">
@@ -857,22 +847,14 @@
                                     <div class="vedio_WTP 
                                     active_vedio_WTP">
                                     
-                                        <video autoplay loop  muted  >
-                                            <source src="Video/3rdbg1.mp4" type="Video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
+                                     
+                                        <video id="video2" class="lazy" data-src="Videos/3rdbg1.mp4"></video>
                                     </div>
                                     <div class="vedio_WTP ">
-                                        <video autoplay loop  muted  >
-                                            <source src="Video/3rdbg2.mp4" type="Video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
+                                        <video id="video2" class="lazy" data-src="Videos/3rdbg2.mp4"></video>
                                     </div> 
                                     <div class="vedio_WTP ">
-                                        <video autoplay loop  muted  >
-                                            <source src="Video/3rdbg3.mp4" type="Video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
+                                        <video id="video2" class="lazy" data-src="Videos/3rdbg3.mp4"></video>
                                     </div>
                                 </div>
                                 <div class="svg_outter_border">
@@ -1006,7 +988,7 @@
     
     <div class="last_vedio_container">
         <div class="vedio_cotnainer">
-            <video src="Img/ss2020_kaisa_1920x1080.mp4" autoplay muted loop style="object-fit: cover;"></video>
+            <video id="video2" class="lazy" style="object-fit: cover;" data-src="Img/ss2020_kaisa_1920x1080.mp4"></video>
         </div>
             
         <div class="button_container">
