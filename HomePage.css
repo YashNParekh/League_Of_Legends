@@ -54,7 +54,7 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
-    background: url(Images/main_logo_page_background.png);
+    background: url(img/main_logo_page_background.png);
     background-repeat: repeat;
     /* background-size: cover; */
     /* overflow: hidden; */
