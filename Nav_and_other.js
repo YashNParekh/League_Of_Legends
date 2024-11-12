@@ -121,7 +121,6 @@ function button_unfill(){
 }
 
 
-var music = document.getElementById('back_music');
 
 function music_play(){
 
@@ -134,7 +133,7 @@ function music_play(){
     var lines = document.querySelectorAll('.music_toggle_button>span');
     
 
-
+    var music = document.getElementById('back_music');
     var audiolist = document.querySelectorAll('.audio_effects');
 
     audiolist.forEach((element)=>{
@@ -163,4 +162,4 @@ function music_play(){
 
 
 
-music_play()
+// music_play()
