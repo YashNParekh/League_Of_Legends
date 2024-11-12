@@ -160,8 +160,3 @@ function music_play(){
      
 
 }
-
-
-setTimeout(()=>{
-    music_play()
-  },1000)
