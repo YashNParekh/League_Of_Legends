@@ -29,8 +29,8 @@
         
         
     
-    <audio id="back_music" class="audio_effects" loop muted src="Background_music.mp3"></audio>
-    <audio id="hover_sound" class="audio_effects"  muted src="hover_sound.wav"></audio>
+    <audio id="back_music" class="audio_effects" loop muted src="./Background_music.mp3"></audio>
+    <audio id="hover_sound" class="audio_effects"  muted src="./hover_sound.wav"></audio>
     
 
 
@@ -157,7 +157,7 @@
 
         <div class="first_vedio_with_blur">
             <video loop autoplay muted >
-                <source src="https://www.leagueoflegends.com/static/hero-c35bd03ceaa5f919e98b20c905044a3d.webm" type="video/mp4">
+                <source src="Video\1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>    
         </div>
@@ -167,7 +167,7 @@
 
             <div class="video_container">
                 <video loop autoplay muted >
-                    <source src="https://www.leagueoflegends.com/static/hero-c35bd03ceaa5f919e98b20c905044a3d.webm" type="video/mp4">
+                    <source src="Video\1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
             </div>
@@ -176,15 +176,14 @@
              <div class="logo_svg_container">
                 <div  class="svg_border_container">
                     <svg  id="svg_border" fill="none" >
-                        <path height="100%"
-                            widht="100%"
+                        <path 
                         id="main_border_path" d="M5 5H 580L620 40V 500H 5V 5Z"  stroke-width="2"/>
                     </svg>
                              
                 </div>
 
                 <div class="img_container">
-                    <img src="https://www.leagueoflegends.com/static/logo-1200-04b3cefafba917c9c571f9244fd28a1e.png"    alt="">
+                    <img src="Img/logo.webp"    alt="">
 
                     <!-- button for play now -->
                     <div class="button_container">
@@ -197,8 +196,8 @@
                         <span >PLAY FOR FREE</span>
                     </div>
                 </div>
-<!--                 
-                <div class = 'svg_text_container'>
+
+                <!-- <div class 
                     <svg width="1200" height="429" viewBox="0 0 1200 429" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="path_animate" d="M356.182 188H332.545L400.909 1.81818H424.182L492.545 188H468.909L413.273 31.2727H411.818L356.182 188ZM364.909 115.273H460.182V135.273H364.909V115.273Z" fill="black"/>
                         <path class="path_animate" d="M465.818 284C463.818 277.879 461.182 272.394 457.909 267.545C454.697 262.636 450.848 258.455 446.364 255C441.939 251.545 436.909 248.909 431.273 247.091C425.636 245.273 419.455 244.364 412.727 244.364C401.697 244.364 391.667 247.212 382.636 252.909C373.606 258.606 366.424 267 361.091 278.091C355.758 289.182 353.091 302.788 353.091 318.909C353.091 335.03 355.788 348.636 361.182 359.727C366.576 370.818 373.879 379.212 383.091 384.909C392.303 390.606 402.667 393.455 414.182 393.455C424.848 393.455 434.242 391.182 442.364 386.636C450.545 382.03 456.909 375.545 461.455 367.182C466.061 358.758 468.364 348.848 468.364 337.455L475.273 338.909H419.273V318.909H490.182V338.909C490.182 354.242 486.909 367.576 480.364 378.909C473.879 390.242 464.909 399.03 453.455 405.273C442.061 411.455 428.97 414.545 414.182 414.545C397.697 414.545 383.212 410.667 370.727 402.909C358.303 395.152 348.606 384.121 341.636 369.818C334.727 355.515 331.273 338.545 331.273 318.909C331.273 304.182 333.242 290.939 337.182 279.182C341.182 267.364 346.818 257.303 354.091 249C361.364 240.697 369.97 234.333 379.909 229.909C389.848 225.485 400.788 223.273 412.727 223.273C422.545 223.273 431.697 224.758 440.182 227.727C448.727 230.636 456.333 234.788 463 240.182C469.727 245.515 475.333 251.909 479.818 259.364C484.303 266.758 487.394 274.97 489.091 284H465.818Z" fill="black"/>
@@ -219,24 +218,20 @@
                         
                         <defs>
                             <filter id="displacementFilter">
-                              <feTurbulence baseFrequency="0.06,0.06" numOctaves="5" />
-                              <feDisplacementMap id ='animater' in="SourceGraphic" in2 = 'static' scale="0" >
-                                 
-                              </feDisplacementMap>
+                            <feTurbulence baseFrequency="0.06,0.06" numOctaves="5" />
+                            <feDisplacementMap id ='animater' in="SourceGraphic" in2 = 'static' scale="0" >
+                            </feDisplacementMap>
                             </filter>
-                          </defs>
-                          
-                          <filter id="noise">
+                            </defs>
+                            <filter id="noise">
                             <feTurbulence baseFrequency="0.06,0.9" seed="100" type="fractalNoise"  result="static"/>
                             <feDisplacementMap id ='animater1' in="SourceGraphic" in2="static" scale="0" >
-            
                             </feDisplacementMap>
-                    </svg>
-                </div> -->
-             </div>
+                        </svg>
+                    </div> -->
+                </div>
             </div>
             </div>
-        <!-- second inner ounter close -->
 
         </div>
 
@@ -482,14 +477,14 @@
                 
                                                 <div class="ch_v active_champ_vedio">
                                                 <video  loop autoplay muted  >
-                                                    <source src="https://www.leagueoflegends.com/static/assassin-26d5e794c9f73d8e76a435d97dcff92c.mp4" type="video/mp4">
+                                                    <source src="Video/ch1.webm" type="video/mp4">
                                                     Your browser does not support the video tag.
                                                   </video>
                                                 </div>
                                                 
                                                 <div class="ch_v ">
                                                   <video  loop  muted class="" >
-                                                    <source src="https://www.leagueoflegends.com/static/fighter-9154d1a09fe5013940925e9534d91e44.mp4" type="video/mp4">
+                                                    <source src="Video/ch2.mp4" type="video/mp4">
                                                     Your browser does not support the video tag.
                                                   </video>
                                                 </div>
@@ -497,21 +492,21 @@
                                                   
                                                 <div class="ch_v">
                                                 <video  loop  muted  >
-                                                    <source src="https://www.leagueoflegends.com/static/mage-767c23ff6cad1879edaa415bbeb67f05.mp4" type="video/mp4">
+                                                    <source src="Video/ch3.mp4"video/mp4">
                                                     Your browser does not support the video tag.
                                                   </video>
                                                 </div>
                 
                                                 <div class="ch_v">
                                                 <video loop  muted  >
-                                                    <source src="https://www.leagueoflegends.com/static/marksman-6fc0c969d08b2ddcae7b74084c844493.mp4" type="video/mp4">
+                                                    <source src="Video/ch4.mp4" type="video/mp4">
                                                     Your browser does not support the video tag.
                                                   </video>
                                                 </div>
                                                   
                                                 <div class="ch_v">
                                                 <video loop  muted  >
-                                                    <source src="https://www.leagueoflegends.com/static/support-00d169defbe40c0c1d29e61fff8423df.mp4" type="video/mp4">
+                                                    <source src="Video/ch5.webm" type="video/mp4">
                                                     Your browser does not support the video tag.
                                                   </video>
                                                 </div>
@@ -519,7 +514,7 @@
                 
                                                 <div class="ch_v">
                                                   <video loop  muted  >
-                                                      <source src="https://www.leagueoflegends.com/static/tank-dcaebdf6d16d2bbddc53ad9d7e7d6590.mp4" type="video/mp4">
+                                                      <source src="Video/ch6.mp4" type="video/mp4">
                                                       Your browser does not support the video tag.
                                                     </video>
                                                 </div>
@@ -575,12 +570,12 @@
                                   
                                   
                                   
-                                  <img class="image active_image"  src="https://www.leagueoflegends.com/static/assassin-a648ef647c30c9411666320760cf348b.png" alt="">
-                                  <img class="image" src="https://www.leagueoflegends.com/static/fighter-a4437cd565f0ef83367b671e5d07fe5c.png" alt="">
-                                  <img class="image" src="https://www.leagueoflegends.com/static/mage-3982e64e8ed1cd4dceec59ad308a161d.png" alt="">
-                                  <img class="image" src="https://www.leagueoflegends.com/static/marksman-479be0ed78d734df0bbf0dee3d6a512b.png" alt="">
-                                  <img class="image" src="https://www.leagueoflegends.com/static/support-67a9e712458a12bbb8282bda5333a0ba.png" alt="">
-                                  <img class="image" src="https://www.leagueoflegends.com/static/tank-585e210d26783e11b97d62eafa248ff4.png" alt="">
+                                  <img class="image active_image"  src="Img/ch1.png" alt="">
+                                  <img class="image" src="Img/ch2.png" alt="">
+                                  <img class="image" src="Img/ch3.png" alt="">
+                                  <img class="image" src="Img/ch4.png" alt="">
+                                  <img class="image" src="Img/ch5.png" alt="">
+                                  <img class="image" src="Img/ch6.png" alt="">
                                   
                                   <svg>
                                     <filter id="waves">
@@ -661,22 +656,22 @@
                           -o-transition: top 800ms ease-out,left 800ms ease-out;
                           " 
                         
-                        src="https://www.leagueoflegends.com/static/championstyle_02-ec1e19123689c03a81b99180faae71e8.png" alt="">
+                        src="Img/b2.png" alt="">
 
                     </div>
                         
                     <div style="top: 5%; transition: all 100ms linear;"
                        class="backgound_2_inner">
                         <img data-final_left_value="0%" class="backgound_2_inner_img" 
-                        style="top: 0%;left: 0%;
-
-                          transition: top 800ms ease-out,left 800ms ease;
-                          -moz-transition: top 800ms ease-out,left 800ms ease;
-                          -webkit-transition: top 800ms ease-out,left 800ms ease;
-                          -o-transition: top 800ms ease-out,left 800ms ease;
-
-                          
-                          "  src="https://www.leagueoflegends.com/static/championstyle_01-ba6337ba3f72c510905ea99f3937ffd7.png" alt="">
+                        style="
+                        top: 0%;left: 0%;
+                        transition: top 800ms ease-out,left 800ms ease;
+                        -moz-transition: top 800ms ease-out,left 800ms ease;
+                        -webkit-transition: top 800ms ease-out,left 800ms ease;
+                        -o-transition: top 800ms ease-out,left 800ms ease;
+                        " 
+                        
+                        src="Img/bg1.png" alt="">
 
                     </div>
 
@@ -684,7 +679,6 @@
                     <div class="background_partical_inner">
                         
                             <canvas id="canvas_partical_sws"></canvas>
-
                     </div>
                 </div>
                 
@@ -694,10 +688,10 @@
             <div class="contant_container">
 
                 <div style="left:0;top: 0;
-                          transition: top 800ms ease-out,left 800ms ease-out;
-                          -moz-transition: top 800ms ease-out,left 800ms ease-out;
-                          -webkit-transition: top 800ms ease-out,left 800ms ease-out;
-                          -o-transition: top 800ms ease-out,left 800ms ease-out;
+                        transition: top 800ms ease-out,left 800ms ease-out;
+                        -moz-transition: top 800ms ease-out,left 800ms ease-out;
+                        -webkit-transition: top 800ms ease-out,left 800ms ease-out;
+                        -o-transition: top 800ms ease-out,left 800ms ease-out;
                           
                 " class="side_hadder">
                     <span>Champion Skins</span>
@@ -729,13 +723,13 @@
                         <div  class="images_slider">
                         
                         <div  class="images_slider_container">
-                            <img class="active_1" src="https://www.leagueoflegends.com/static/assassin-two-a5ebf8c8bc37fff89abf4dbbf4e347ed.png" alt="">
+                            <img class="active_1" src="img/ch12.png" alt="">
                         </div>
                         <div class="images_slider_container">
-                            <img class="active_2" src="https://www.leagueoflegends.com/static/assassin-four-85a56a7435150a924e72159572d5552f.png" alt="">
+                            <img class="active_2" src="img/ch13.png" alt="">
                         </div>
                         <div class="images_slider_container">
-                            <img class="active_3" src="https://www.leagueoflegends.com/static/assassin-three-7a5c6f94608e146c6d40c68abf2b685b.png" alt="">
+                            <img class="active_3" src="img/ch14.png" alt="">
                             
                         </div>
                         
@@ -801,13 +795,13 @@
                 <div class="Background_for_WTP_inner">
 
                         <div class="WTP_B_1 active_WTP_B">
-                            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc28d43095579c8b5/5d87c24e8d8a3163705e3070/summonersrift.jpg" alt="">
+                            <img src="img/summonersrift1.jpg" alt="">
                         </div>
                         <div class="WTP_B_1">
-                            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt13186c22cf0a2f30/5d87c24e3166f22df2ab8dc4/howlingabyss.jpg" alt="">
+                            <img src="img/3rdb2.avif" alt="">
                         </div>
                         <div class="WTP_B_1">
-                            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf930a7a2b83fff60/5e17887df980a27e5b76ac2f/teamfighttactics.jpg" alt="">
+                            <img src="img/3rdb3.png" alt="">
                         </div>
                 </div>
             </div>
@@ -825,8 +819,7 @@
 
                     <div class="background_svg">
                         <svg  id="svg_border1" fill="none" >
-                            <path height="100%"
-                                widht="100%"
+                            <path 
                             id="main_border_path1" d="M5 5H 580L620 40V 500H 5V 5Z"  stroke="#65717B"  stroke-width="2"/>
                         </svg>
                     </div>
@@ -844,8 +837,6 @@
                             </div>
                     
                         
-                      
-        
                         <div class="WTP_outter_Button">
                             
                                 <a class="WTP_a_link" href="#">
@@ -858,41 +849,36 @@
 
 
                         <div class="WTP_vedio_container_outter">
-                        
                             <div class="WTP_vedio_container_inner">
-                                                            
-    
                                 <div class="vedios_container_outter">
-    
                                     
 
                                     <div class="vedio_WTP 
-                                     
                                     active_vedio_WTP">
                                     
                                         <video autoplay loop  muted  >
-                                            <source src="https://assets.contentstack.io/v3/assets/blt731acb42bb3d1659/blt04d1a8eb899e9dd4/5d87c234c7fab32df76ddee5/summonersrift.mp4" type="video/mp4">
+                                            <source src="Video/3rdbg1.mp4" type="video/mp4">
                                             Your browser does not support the video tag.
-                                          </video>
+                                        </video>
                                     </div>
                                     <div class="vedio_WTP ">
                                         <video autoplay loop  muted  >
-                                            <source src="https://assets.contentstack.io/v3/assets/blt731acb42bb3d1659/blt368bbe12c8917439/5d87c69c5b3acf6e5c6efa6a/howlingabyss.mp4" type="video/mp4">
+                                            <source src="Video/3rdbg2.mp4" type="video/mp4">
                                             Your browser does not support the video tag.
-                                          </video>
+                                        </video>
                                     </div> 
-                                     <div class="vedio_WTP ">
+                                    <div class="vedio_WTP ">
                                         <video autoplay loop  muted  >
-                                            <source src="https://assets.contentstack.io/v3/assets/blt731acb42bb3d1659/blt358cbfdb47618c25/5d87c2345b3acf6e5c6efa5e/teamfighttactics.mp4" type="video/mp4">
+                                            <source src="Video/3rdbg3.mp4" type="video/mp4">
                                             Your browser does not support the video tag.
-                                          </video>
+                                        </video>
                                     </div>
                                 </div>
                                 <div class="svg_outter_border">
                                     <svg class="border_dased_rotate_svg" viewBox="0 0 100 100">
 
                                         <path
-                                         d="M49.22,100l0-1h.08l0,1Zm1.51-1h.09v1h-.08Zm-3,1,0-1h.08l0,1Zm4.52-1h.09l0,1h-.08Zm-6,.91.07-1h.09l-.08,1Zm7.54-1h.08l.07,1h-.08Zm-9.06.86.11-1h.08l-.11,1Zm10.55-1h.08l.11,1h-.09Zm-12.06.82.13-1h.09l-.14,1Zm13.54-1h.08l.14,1h-.08Zm-15,.77.16-1h.09l-.17,1Zm16.53-1h.08l.17,1h-.09Zm-18,.71.2-1,.08,0-.2,1Zm19.5-1,.08,0,.19,1-.08,0Zm-21,.66.23-1,.08,0-.23,1Zm22.45-1,.08,0,.22,1-.07,0Zm-23.93.6.26-1,.07,0-.25,1Zm25.38-1,.08,0,.25,1-.07,0Zm-26.85.55L36,97l.08,0-.29,1ZM64,97l.08,0,.28,1-.08,0Zm-29.75.5.32-1,.08,0-.31,1Zm31.17-1,.08,0,.32,1-.08,0ZM32.8,97l.35-1,.08,0-.34,1Zm34-.94.08,0,.34,1-.08,0Zm-35.45.39.38-.93.07,0-.37.93Zm36.85-.92.08,0,.37.94-.08,0ZM30,95.84l.4-.93.08,0-.4.92Zm39.63-.92.08,0,.4.93-.08,0Zm-41,.28.43-.9.07,0-.43.91ZM71,94.29l.08,0,.43.91-.08,0Zm-43.74.24.46-.89.07,0-.45.9Zm45.09-.9.07,0,.46.9-.08,0Zm-46.43.19.48-.88.08,0-.49.88Zm47.76-.9.06,0,.48.88-.07,0Zm-49.08.14.51-.86.07,0-.51.87Zm50.37-.87.07,0,.51.87-.07,0Zm-51.67.08.54-.85.07,0-.54.85Zm52.94-.87.07,0,.54.85-.07,0ZM22,91.43l.56-.83.07.05-.57.83Zm55.46-.85.07,0,.57.83-.07,0Zm-56.71,0,.59-.82.06.05-.58.82Zm57.94-.83.06,0,.6.81-.07.05Zm-59.16-.08.61-.8.07.05-.62.8Zm60.36-.82.06,0,.62.8-.07,0ZM18.33,88.7l.64-.78L19,88l-.64.77Zm62.73-.8.06-.05.64.77-.07.06Zm-63.89-.18.66-.76.06.06-.66.75Zm65-.79.06-.05.66.76-.06,0ZM16,86.7l.69-.74.06.06-.68.74Zm67.28-.77.06-.05.69.74-.07,0Zm-68.38-.28.71-.72.06.06-.71.72Zm69.46-.75.06-.06.71.72-.06.06Zm-70.53-.34.73-.7.06.07-.73.69Zm71.58-.72,0-.06.73.69-.06.06Zm-72.62-.4.75-.67.06.06-.75.68Zm73.63-.7.06-.06.75.67-.06.06Zm-74.63-.45.77-.65.05.07-.76.65Zm75.61-.67.06-.07.77.65-.06.07Zm-76.58-.51.79-.62,0,.06-.78.63Zm77.53-.65.05-.06.79.62,0,.07ZM9.92,79.91l.81-.61,0,.07L10,80Zm79.37-.63,0-.07.81.6-.05.07ZM9,78.67l.82-.58.05.07-.83.58Zm81.14-.6,0-.07.83.58-.05.06Zm-82-.66L9,76.85l.05.08-.85.55ZM91,76.83l0-.07.84.55,0,.08ZM7.35,76.12l.86-.53,0,.07-.86.53Zm84.45-.55,0-.07.86.53,0,.07ZM6.57,74.8l.87-.5,0,.08-.88.5Zm86-.51,0-.07.88.5,0,.07ZM5.83,73.47,6.72,73l0,.08-.89.47ZM93.28,73l0-.07.89.47,0,.08ZM5.14,72.11l.9-.45,0,.08-.91.44ZM94,71.66l0-.08.9.45,0,.07ZM4.48,70.73l.92-.42,0,.07-.92.42Zm90.12-.42,0-.07.91.41,0,.08Zm-90.73-1,.92-.38,0,.07-.93.39ZM95.2,69l0-.08.93.39,0,.08Zm-91.9-1,.94-.35,0,.07L3.33,68Zm92.45-.33,0-.08.94.36,0,.08Zm-93-1.1,1-.33,0,.08-1,.33Zm93.5-.31,0-.07,1,.33,0,.08ZM2.29,65l1-.29,0,.08-1,.3Zm94.45-.26,0-.08,1,.3,0,.08ZM1.85,63.55l1-.27,0,.08-1,.28Zm95.32-.24,0-.08,1,.27,0,.09ZM1.46,62.08l1-.24,0,.08-1,.24Zm96.09-.21,0-.08,1,.24,0,.08ZM1.12,60.59l1-.21,0,.08-1,.22Zm96.77-.18,0-.08,1,.22,0,.08ZM.82,59.1l1-.18,0,.08-1,.18ZM98.18,59l0-.08,1,.18,0,.08ZM.57,57.6l1-.16,0,.09-1,.15Zm97.86-.12v-.09l1,.15v.09ZM.36,56.09l1-.13v.09l-1,.12ZM98.63,56v-.09l1,.12v.09ZM.2,54.57l1-.09v.08l-1,.09Zm98.59-.06v-.08l1,.09v.08ZM.09,53.05l1-.06v.08l-1,.06Zm98.82,0v-.08l1,.06v.08ZM0,51.52l1,0v.09l-1,0Zm99,0v-.09l1,0v.09Zm0-3.07,1,0v.09l-1,0ZM0,48.49v-.08l1,0v.09ZM98.9,47l1-.06V47l-1,0ZM.09,47v-.08l1,.06V47Zm98.7-1.5,1-.09v.08l-1,.1ZM.2,45.45v-.09l1,.1v.08ZM98.63,44l1-.13V44l-1,.12ZM.36,43.94v-.09l1,.12v.08Zm98.07-1.43,1-.16,0,.09-1,.15ZM.57,42.42v-.08l1,.15v.09ZM98.18,41l1-.18v.08l-1,.18ZM.82,40.92v-.08l1,.18v.08Zm97.06-1.35,1-.22,0,.09-1,.21ZM1.12,39.42v-.08l1,.22,0,.08Zm96.43-1.31,1-.24,0,.08-1,.24ZM1.46,37.94l0-.08,1,.24,0,.08Zm95.7-1.27,1-.28,0,.09-1,.27ZM1.85,36.46l0-.08,1,.28,0,.08Zm94.88-1.22,1-.31,0,.08-1,.31ZM2.28,35l0-.08,1,.31,0,.08Zm94-1.19.95-.33,0,.08-.95.33Zm-93.5-.26,0-.08,1,.33,0,.09Zm93-1.14.94-.37,0,.08-.94.36ZM3.29,32.12l0-.08.94.36,0,.08Zm.56-1.41,0-.08.93.39,0,.08ZM95.18,31l.93-.39,0,.07-.93.39ZM4.46,29.31l0-.07.91.42,0,.07Zm90.12.33.92-.41,0,.07-.91.42ZM5.11,27.94l0-.07.9.44,0,.08Zm88.83.35.9-.44,0,.07-.9.45ZM5.8,26.59l0-.08.89.48,0,.07ZM93.25,27l.89-.47,0,.07-.89.47ZM6.54,25.25l0-.07.87.5,0,.07Zm86,.4.87-.5,0,.07-.87.5ZM7.31,23.94l.05-.07.85.53,0,.07Zm84.45.42.86-.52,0,.07-.86.53ZM8.13,22.66l0-.07.84.55,0,.07ZM91,23.1l.84-.55,0,.07-.84.55ZM9,21.4l0-.07.82.58,0,.06Zm81.14.47.82-.58,0,.07-.82.57ZM9.87,20.16l.05-.07.81.61-.05.06Zm79.37.5.81-.61,0,.07-.81.6ZM10.8,19l0-.06.79.62-.05.07Zm77.53.52.78-.63.06.07-.79.63Zm-76.57-1.7.06-.06.77.65-.06.06Zm75.62.55.76-.66.06.07-.77.65Zm-74.62-1.7.06-.06.75.67-.06.07Zm73.63.57.75-.67.06.06-.75.67ZM13.8,15.5l.06-.06.72.7-.05.06Zm71.58.6.72-.7.06.06-.73.7ZM14.87,14.42l.06-.06.7.72-.06.05ZM84.33,15l.7-.71.06,0-.71.72ZM16,13.36,16,13.3l.68.74-.06.06ZM83.24,14l.69-.74.06.06-.69.74ZM17.1,12.34l.06-.06.66.76-.06.06Zm65,.67.66-.76.06.05-.66.76ZM18.26,11.35l.07,0,.64.78-.07.05ZM81,12l.64-.78.06.06-.64.78ZM19.46,10.4l.06-.05.62.8-.07,0Zm60.36.72.61-.8.07,0-.62.8ZM20.68,9.49l.07-.05.59.81-.07.05Zm57.94.74.59-.82.07.05-.59.81ZM21.93,8.61l.07,0,.56.84-.07,0Zm55.47.76L78,8.54l.07,0-.56.84ZM23.2,7.77l.08,0,.54.85-.08,0Zm53,.78.54-.85.07,0-.54.85ZM24.51,7l.07,0,.51.87-.07,0Zm50.37.81.51-.87.07,0L75,7.82Zm-49-1.57.08,0,.48.88-.07,0ZM73.58,7l.49-.88.07,0-.49.88ZM27.18,5.49l.07,0,.46.89-.07,0Zm45.08.85.46-.9.08,0-.46.9ZM28.55,4.82l.08,0,.43.91-.08,0Zm42.38.86.43-.91.07,0L71,5.72Zm-41-1.5.08,0,.4.92-.08,0Zm39.63.89.4-.93.08,0-.4.92ZM31.35,3.59l.08,0,.37.93-.08,0Zm36.85.9.37-.93.08,0-.38.93ZM66.8,4l.35-1,.08,0-.35,1ZM32.78,3l.08,0,.34,1-.08,0Zm32.61.43.31-1,.09,0-.32,1ZM34.22,2.54l.08,0,.32,1-.08,0ZM64,3l.29-1,.08,0L64,3ZM35.68,2.08l.08,0L36,3,36,3Zm26.84.54.26-1,.08,0-.26,1Zm-25.38-1,.09,0,.25,1-.08,0Zm23.93.6.23-1,.08,0-.22,1Zm-22.44-1h.08l.22,1-.08,0Zm21,.65.2-1h.08l-.2,1ZM40.12,1h.08l.2,1-.09,0Zm18,.71.17-1,.08,0-.16,1ZM41.61.69h.09l.16,1-.08,0Zm15.06.76.13-1,.09,0-.14,1ZM43.12.46h.09l.13,1h-.08Zm12.06.81.11-1h.08l-.1,1ZM44.64.28h.08l.11,1h-.09Zm9,.86.08-1h.08l-.07,1Zm-7.52-1h.07l.07,1h-.08Zm6,.91,0-1h.08l0,1Zm-4.52-1h.08l.05,1h-.09ZM49.2,0h.08l0,1h-.08Zm1.51,1,0-1h.08l0,1Z">
+                                        d="M49.22,100l0-1h.08l0,1Zm1.51-1h.09v1h-.08Zm-3,1,0-1h.08l0,1Zm4.52-1h.09l0,1h-.08Zm-6,.91.07-1h.09l-.08,1Zm7.54-1h.08l.07,1h-.08Zm-9.06.86.11-1h.08l-.11,1Zm10.55-1h.08l.11,1h-.09Zm-12.06.82.13-1h.09l-.14,1Zm13.54-1h.08l.14,1h-.08Zm-15,.77.16-1h.09l-.17,1Zm16.53-1h.08l.17,1h-.09Zm-18,.71.2-1,.08,0-.2,1Zm19.5-1,.08,0,.19,1-.08,0Zm-21,.66.23-1,.08,0-.23,1Zm22.45-1,.08,0,.22,1-.07,0Zm-23.93.6.26-1,.07,0-.25,1Zm25.38-1,.08,0,.25,1-.07,0Zm-26.85.55L36,97l.08,0-.29,1ZM64,97l.08,0,.28,1-.08,0Zm-29.75.5.32-1,.08,0-.31,1Zm31.17-1,.08,0,.32,1-.08,0ZM32.8,97l.35-1,.08,0-.34,1Zm34-.94.08,0,.34,1-.08,0Zm-35.45.39.38-.93.07,0-.37.93Zm36.85-.92.08,0,.37.94-.08,0ZM30,95.84l.4-.93.08,0-.4.92Zm39.63-.92.08,0,.4.93-.08,0Zm-41,.28.43-.9.07,0-.43.91ZM71,94.29l.08,0,.43.91-.08,0Zm-43.74.24.46-.89.07,0-.45.9Zm45.09-.9.07,0,.46.9-.08,0Zm-46.43.19.48-.88.08,0-.49.88Zm47.76-.9.06,0,.48.88-.07,0Zm-49.08.14.51-.86.07,0-.51.87Zm50.37-.87.07,0,.51.87-.07,0Zm-51.67.08.54-.85.07,0-.54.85Zm52.94-.87.07,0,.54.85-.07,0ZM22,91.43l.56-.83.07.05-.57.83Zm55.46-.85.07,0,.57.83-.07,0Zm-56.71,0,.59-.82.06.05-.58.82Zm57.94-.83.06,0,.6.81-.07.05Zm-59.16-.08.61-.8.07.05-.62.8Zm60.36-.82.06,0,.62.8-.07,0ZM18.33,88.7l.64-.78L19,88l-.64.77Zm62.73-.8.06-.05.64.77-.07.06Zm-63.89-.18.66-.76.06.06-.66.75Zm65-.79.06-.05.66.76-.06,0ZM16,86.7l.69-.74.06.06-.68.74Zm67.28-.77.06-.05.69.74-.07,0Zm-68.38-.28.71-.72.06.06-.71.72Zm69.46-.75.06-.06.71.72-.06.06Zm-70.53-.34.73-.7.06.07-.73.69Zm71.58-.72,0-.06.73.69-.06.06Zm-72.62-.4.75-.67.06.06-.75.68Zm73.63-.7.06-.06.75.67-.06.06Zm-74.63-.45.77-.65.05.07-.76.65Zm75.61-.67.06-.07.77.65-.06.07Zm-76.58-.51.79-.62,0,.06-.78.63Zm77.53-.65.05-.06.79.62,0,.07ZM9.92,79.91l.81-.61,0,.07L10,80Zm79.37-.63,0-.07.81.6-.05.07ZM9,78.67l.82-.58.05.07-.83.58Zm81.14-.6,0-.07.83.58-.05.06Zm-82-.66L9,76.85l.05.08-.85.55ZM91,76.83l0-.07.84.55,0,.08ZM7.35,76.12l.86-.53,0,.07-.86.53Zm84.45-.55,0-.07.86.53,0,.07ZM6.57,74.8l.87-.5,0,.08-.88.5Zm86-.51,0-.07.88.5,0,.07ZM5.83,73.47,6.72,73l0,.08-.89.47ZM93.28,73l0-.07.89.47,0,.08ZM5.14,72.11l.9-.45,0,.08-.91.44ZM94,71.66l0-.08.9.45,0,.07ZM4.48,70.73l.92-.42,0,.07-.92.42Zm90.12-.42,0-.07.91.41,0,.08Zm-90.73-1,.92-.38,0,.07-.93.39ZM95.2,69l0-.08.93.39,0,.08Zm-91.9-1,.94-.35,0,.07L3.33,68Zm92.45-.33,0-.08.94.36,0,.08Zm-93-1.1,1-.33,0,.08-1,.33Zm93.5-.31,0-.07,1,.33,0,.08ZM2.29,65l1-.29,0,.08-1,.3Zm94.45-.26,0-.08,1,.3,0,.08ZM1.85,63.55l1-.27,0,.08-1,.28Zm95.32-.24,0-.08,1,.27,0,.09ZM1.46,62.08l1-.24,0,.08-1,.24Zm96.09-.21,0-.08,1,.24,0,.08ZM1.12,60.59l1-.21,0,.08-1,.22Zm96.77-.18,0-.08,1,.22,0,.08ZM.82,59.1l1-.18,0,.08-1,.18ZM98.18,59l0-.08,1,.18,0,.08ZM.57,57.6l1-.16,0,.09-1,.15Zm97.86-.12v-.09l1,.15v.09ZM.36,56.09l1-.13v.09l-1,.12ZM98.63,56v-.09l1,.12v.09ZM.2,54.57l1-.09v.08l-1,.09Zm98.59-.06v-.08l1,.09v.08ZM.09,53.05l1-.06v.08l-1,.06Zm98.82,0v-.08l1,.06v.08ZM0,51.52l1,0v.09l-1,0Zm99,0v-.09l1,0v.09Zm0-3.07,1,0v.09l-1,0ZM0,48.49v-.08l1,0v.09ZM98.9,47l1-.06V47l-1,0ZM.09,47v-.08l1,.06V47Zm98.7-1.5,1-.09v.08l-1,.1ZM.2,45.45v-.09l1,.1v.08ZM98.63,44l1-.13V44l-1,.12ZM.36,43.94v-.09l1,.12v.08Zm98.07-1.43,1-.16,0,.09-1,.15ZM.57,42.42v-.08l1,.15v.09ZM98.18,41l1-.18v.08l-1,.18ZM.82,40.92v-.08l1,.18v.08Zm97.06-1.35,1-.22,0,.09-1,.21ZM1.12,39.42v-.08l1,.22,0,.08Zm96.43-1.31,1-.24,0,.08-1,.24ZM1.46,37.94l0-.08,1,.24,0,.08Zm95.7-1.27,1-.28,0,.09-1,.27ZM1.85,36.46l0-.08,1,.28,0,.08Zm94.88-1.22,1-.31,0,.08-1,.31ZM2.28,35l0-.08,1,.31,0,.08Zm94-1.19.95-.33,0,.08-.95.33Zm-93.5-.26,0-.08,1,.33,0,.09Zm93-1.14.94-.37,0,.08-.94.36ZM3.29,32.12l0-.08.94.36,0,.08Zm.56-1.41,0-.08.93.39,0,.08ZM95.18,31l.93-.39,0,.07-.93.39ZM4.46,29.31l0-.07.91.42,0,.07Zm90.12.33.92-.41,0,.07-.91.42ZM5.11,27.94l0-.07.9.44,0,.08Zm88.83.35.9-.44,0,.07-.9.45ZM5.8,26.59l0-.08.89.48,0,.07ZM93.25,27l.89-.47,0,.07-.89.47ZM6.54,25.25l0-.07.87.5,0,.07Zm86,.4.87-.5,0,.07-.87.5ZM7.31,23.94l.05-.07.85.53,0,.07Zm84.45.42.86-.52,0,.07-.86.53ZM8.13,22.66l0-.07.84.55,0,.07ZM91,23.1l.84-.55,0,.07-.84.55ZM9,21.4l0-.07.82.58,0,.06Zm81.14.47.82-.58,0,.07-.82.57ZM9.87,20.16l.05-.07.81.61-.05.06Zm79.37.5.81-.61,0,.07-.81.6ZM10.8,19l0-.06.79.62-.05.07Zm77.53.52.78-.63.06.07-.79.63Zm-76.57-1.7.06-.06.77.65-.06.06Zm75.62.55.76-.66.06.07-.77.65Zm-74.62-1.7.06-.06.75.67-.06.07Zm73.63.57.75-.67.06.06-.75.67ZM13.8,15.5l.06-.06.72.7-.05.06Zm71.58.6.72-.7.06.06-.73.7ZM14.87,14.42l.06-.06.7.72-.06.05ZM84.33,15l.7-.71.06,0-.71.72ZM16,13.36,16,13.3l.68.74-.06.06ZM83.24,14l.69-.74.06.06-.69.74ZM17.1,12.34l.06-.06.66.76-.06.06Zm65,.67.66-.76.06.05-.66.76ZM18.26,11.35l.07,0,.64.78-.07.05ZM81,12l.64-.78.06.06-.64.78ZM19.46,10.4l.06-.05.62.8-.07,0Zm60.36.72.61-.8.07,0-.62.8ZM20.68,9.49l.07-.05.59.81-.07.05Zm57.94.74.59-.82.07.05-.59.81ZM21.93,8.61l.07,0,.56.84-.07,0Zm55.47.76L78,8.54l.07,0-.56.84ZM23.2,7.77l.08,0,.54.85-.08,0Zm53,.78.54-.85.07,0-.54.85ZM24.51,7l.07,0,.51.87-.07,0Zm50.37.81.51-.87.07,0L75,7.82Zm-49-1.57.08,0,.48.88-.07,0ZM73.58,7l.49-.88.07,0-.49.88ZM27.18,5.49l.07,0,.46.89-.07,0Zm45.08.85.46-.9.08,0-.46.9ZM28.55,4.82l.08,0,.43.91-.08,0Zm42.38.86.43-.91.07,0L71,5.72Zm-41-1.5.08,0,.4.92-.08,0Zm39.63.89.4-.93.08,0-.4.92ZM31.35,3.59l.08,0,.37.93-.08,0Zm36.85.9.37-.93.08,0-.38.93ZM66.8,4l.35-1,.08,0-.35,1ZM32.78,3l.08,0,.34,1-.08,0Zm32.61.43.31-1,.09,0-.32,1ZM34.22,2.54l.08,0,.32,1-.08,0ZM64,3l.29-1,.08,0L64,3ZM35.68,2.08l.08,0L36,3,36,3Zm26.84.54.26-1,.08,0-.26,1Zm-25.38-1,.09,0,.25,1-.08,0Zm23.93.6.23-1,.08,0-.22,1Zm-22.44-1h.08l.22,1-.08,0Zm21,.65.2-1h.08l-.2,1ZM40.12,1h.08l.2,1-.09,0Zm18,.71.17-1,.08,0-.16,1ZM41.61.69h.09l.16,1-.08,0Zm15.06.76.13-1,.09,0-.14,1ZM43.12.46h.09l.13,1h-.08Zm12.06.81.11-1h.08l-.1,1ZM44.64.28h.08l.11,1h-.09Zm9,.86.08-1h.08l-.07,1Zm-7.52-1h.07l.07,1h-.08Zm6,.91,0-1h.08l0,1Zm-4.52-1h.08l.05,1h-.09ZM49.2,0h.08l0,1h-.08Zm1.51,1,0-1h.08l0,1Z">
 
                                         </path>
                                     
@@ -903,12 +889,12 @@
                                     <div class="rounded_svg_container">
                                         <div class="container1">
                                             <svg class="circle1" viewBox="-.5 -0.5 101 101" xmlns="http://www.w3.org/2000/svg">
-                                              <circle cx="50" cy="50" r="50" />
+                                                <circle cx="50" cy="50" r="50" />
                                             </svg>
                                         </div>
                                         <div class="container2">
                                             <svg class="circle2" viewBox="-.5 -.5 101 101" xmlns="http://www.w3.org/2000/svg">
-                                              <circle cx="50" cy="50" r="49.8" />
+                                                <circle cx="50" cy="50" r="49.8" />
                                             </svg>
                                         </div>                                
                                     </div>
@@ -926,7 +912,7 @@
                                     <button onclick="change_WTP(2)" class="list_button">
                                         
                                         <div class="B_background active_WPT ">
-                                            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt09b786139c8ce289/5d87c2420ca4b562bfff0abe/summonersrift.jpg" alt="">
+                                            <img src="Img/3rdbg1.webp" alt="">
                                         </div>
 
                                         <div class = "Back_and_text_cotnainer active_text_container"> 
@@ -943,7 +929,7 @@
                                      class="list_button  ">
                                         
                                         <div class="B_background  ">
-                                            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta1f5513b0207fc88/5d87c2428dbc4162c496928b/howlingabyss.jpg" alt="">
+                                            <img src="Img/3rdbg2.webp" alt="">
                                         </div>
 
                                         <div class = "Back_and_text_cotnainer"> 
@@ -959,7 +945,7 @@
                                     class="list_button">
                                         
                                         <div class="B_background">
-                                            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7bb04c5fde905d4b/5e17889f9bcbce578d63ee51/teamfighttactics.jpg" alt="">
+                                            <img src="Img/3rdbg3.webp" alt="">
                                         </div>
 
                                         <div class = "Back_and_text_cotnainer"> 
@@ -1036,8 +1022,7 @@
 
     <footer>
         <div class="part1">
-            <div class="left"><h2>Take League With You</h2></div>
-            <div class="middle">Download the League app to stay connected to friends and the latest game and esports news.</div>
+          
             <div class="right">
                 <img src="Img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.8c4986ee.svg" alt="">
                 <img src="Img/en_get.060d4113.svg" alt="">
@@ -1054,7 +1039,7 @@
             </ul>
         </div>
         <div class="part3">
-               <div><svg width="100" height="45" class="_32ANSIZormifc9Vc6VVwrx" viewBox="0 0 587.93 165"><path d="M98.77.33L0 46.07l24.61 93.66 18.73-2.3-5.15-58.89 6.15-2.74L54.96 136l32.01-3.93-5.69-65 6.09-2.71 11.68 66.23 32.38-3.98-6.23-71.25 6.16-2.74 12.77 72.43 32.01-3.93V19.71L98.77.33zm2.32 142.05l1.63 9.22 73.42 12.24v-30.68l-75.01 9.22h-.04zm144.49-19.22v12.63h15.57a14.84 14.84 0 01-1.92 7.31 13 13 0 01-5.6 5.11 20 20 0 01-8.9 1.8 17.53 17.53 0 01-10-2.8 17.87 17.87 0 01-6.44-8.14 33.06 33.06 0 01-2.27-12.93 31.81 31.81 0 012.32-12.81 18.14 18.14 0 016.5-8 17.27 17.27 0 019.82-2.78 19.31 19.31 0 015.36.71 14.15 14.15 0 014.33 2.09 12.92 12.92 0 013.18 3.29 15.61 15.61 0 012 4.44h17.27a27.22 27.22 0 00-3.46-10.28 28.84 28.84 0 00-7.05-8.1 32.6 32.6 0 00-9.91-5.29 37.91 37.91 0 00-12.06-1.86 37.32 37.32 0 00-14 2.6 32.6 32.6 0 00-11.36 7.61 35 35 0 00-7.61 12.21 46.15 46.15 0 00-2.73 16.44q0 11.94 4.54 20.59a32.4 32.4 0 0012.69 13.27 39.84 39.84 0 0035.84.84 28.39 28.39 0 0011.67-11q4.25-7.19 4.24-17.2v-9.76zm215.03 40.81V88.53h51.67v13.96h-34.62v16.76h27.99v13.96h-27.99v16.8h34.7v13.96h-51.75zm101.83-53.3a9 9 0 00-3.54-6.64c-2.09-1.59-5-2.38-8.69-2.38a16.63 16.63 0 00-6.26 1 8.62 8.62 0 00-3.83 2.78 6.74 6.74 0 00-1.33 4 6.2 6.2 0 00.79 3.29 7.27 7.27 0 002.4 2.45 16.54 16.54 0 003.7 1.79 40.14 40.14 0 004.64 1.31l6.63 1.54a47.19 47.19 0 019.45 3.08 27.46 27.46 0 017.2 4.68 18.84 18.84 0 014.58 6.39 20.37 20.37 0 011.61 8.29 20.65 20.65 0 01-3.54 12.11 22.56 22.56 0 01-10.15 7.85 41.31 41.31 0 01-15.93 2.76 42.69 42.69 0 01-16.17-2.81 23.22 23.22 0 01-10.72-8.48q-3.83-5.66-4-14.12h16.43a10.68 10.68 0 007.05 9.94 19.37 19.37 0 007.24 1.26 18.44 18.44 0 006.66-1.09 10 10 0 004.33-3 7.22 7.22 0 001.57-4.48 6.16 6.16 0 00-1.42-4 10.86 10.86 0 00-4.14-2.81 42.07 42.07 0 00-6.89-2.14l-8.07-1.95q-9.65-2.3-15.23-7.26t-5.54-13.44a19.86 19.86 0 013.72-12.12 24.74 24.74 0 0110.33-8.11 36.74 36.74 0 0115-2.91 35.62 35.62 0 0114.92 2.91 23.43 23.43 0 019.91 8.14 21.54 21.54 0 013.6 12.12zm-113.99 53.3h-16.87v-57.35l-1.73-.02-17.04 57.37h-16.86l-16.58-57.37-2.15.02v57.35h-16.87V88.53h28.67l14.48 50.56h1.75l14.48-50.56h28.72v75.44zm-114.66 0h18.27l-25.33-75.43h-23.15l-25.37 75.43h18.3l4.93-16.54h27.42zm-28.43-29.7l8.22-27.65h3.1l8.26 27.65zm278.58-37.76a4 4 0 01-3.67-2.44 4 4 0 010-3.1 4 4 0 01.85-1.27 4.25 4.25 0 011.27-.86 4.15 4.15 0 013.1 0 4.13 4.13 0 011.27.86 4.08 4.08 0 01.86 1.27 4 4 0 010 3.1 4.08 4.08 0 01-.86 1.27 4 4 0 01-1.27.86 4 4 0 01-1.55.31zm0-1.09a2.84 2.84 0 001.47-.39 2.94 2.94 0 001.05-1 2.93 2.93 0 000-2.92 3 3 0 00-1.06-1 2.93 2.93 0 00-2.92 0 3 3 0 00-1 1 2.86 2.86 0 000 2.92 3 3 0 001 1 2.83 2.83 0 001.46.39zm-1.46-1.15V90.6h1.78a1.52 1.52 0 01.69.15 1.13 1.13 0 01.47.42 1.24 1.24 0 01.17.66 1.16 1.16 0 01-.18.66 1 1 0 01-.48.41 1.56 1.56 0 01-.7.14h-1.2v-.72h1a.52.52 0 00.36-.12.5.5 0 00.14-.37.47.47 0 00-.14-.37.52.52 0 00-.36-.12h-.55v2.93zm2.39-1.68l.82 1.68h-1.11l-.75-1.68zM282.41 1.03h17.05v75.44h-17.05zm98.02 37.72q0 12.42-4.71 21a32.67 32.67 0 01-12.79 13.17 38.57 38.57 0 01-36.31 0 32.75 32.75 0 01-12.79-13.2q-4.71-8.66-4.71-21t4.71-21.05a32.67 32.67 0 0112.75-13.14 38.65 38.65 0 0136.31 0 32.67 32.67 0 0112.79 13.17q4.71 8.64 4.71 21.05m-17.35 0a33.35 33.35 0 00-2.23-13 17.47 17.47 0 00-6.33-8 18.57 18.57 0 00-19.45 0 17.57 17.57 0 00-6.35 8 38.59 38.59 0 000 26 17.49 17.49 0 006.35 8 18.57 18.57 0 0019.45 0 17.39 17.39 0 006.33-8 33.4 33.4 0 002.23-13M246.58 50.17l8.76 26.3h18.71l-9.74-28.33h-13.23l-.79-2.44c2.52-.49 6.83-1.25 10.65-3.85a20 20 0 008.75-16.39 24.15 24.15 0 00-3.26-12.75 21.9 21.9 0 00-9.36-8.64 32.56 32.56 0 00-14.64-3H212v75.4h17.06v-26.3zm-.32-15.61a19.35 19.35 0 01-7.26 1.18h-9.94V14.88h9.91a18.68 18.68 0 017.25 1.24 9.12 9.12 0 014.4 3.7 10 10 0 011.5 5.64 9.65 9.65 0 01-1.48 5.55 8.86 8.86 0 01-4.38 3.55M382.04 1.03v14h29.3l.8 2.45c-2.48.48-6.67 1.22-10.43 3.7v55.31h16.87v-61.5h19.62v-14z"></path></svg>
+                <div><svg width="100" height="45" class="_32ANSIZormifc9Vc6VVwrx" viewBox="0 0 587.93 165"><path d="M98.77.33L0 46.07l24.61 93.66 18.73-2.3-5.15-58.89 6.15-2.74L54.96 136l32.01-3.93-5.69-65 6.09-2.71 11.68 66.23 32.38-3.98-6.23-71.25 6.16-2.74 12.77 72.43 32.01-3.93V19.71L98.77.33zm2.32 142.05l1.63 9.22 73.42 12.24v-30.68l-75.01 9.22h-.04zm144.49-19.22v12.63h15.57a14.84 14.84 0 01-1.92 7.31 13 13 0 01-5.6 5.11 20 20 0 01-8.9 1.8 17.53 17.53 0 01-10-2.8 17.87 17.87 0 01-6.44-8.14 33.06 33.06 0 01-2.27-12.93 31.81 31.81 0 012.32-12.81 18.14 18.14 0 016.5-8 17.27 17.27 0 019.82-2.78 19.31 19.31 0 015.36.71 14.15 14.15 0 014.33 2.09 12.92 12.92 0 013.18 3.29 15.61 15.61 0 012 4.44h17.27a27.22 27.22 0 00-3.46-10.28 28.84 28.84 0 00-7.05-8.1 32.6 32.6 0 00-9.91-5.29 37.91 37.91 0 00-12.06-1.86 37.32 37.32 0 00-14 2.6 32.6 32.6 0 00-11.36 7.61 35 35 0 00-7.61 12.21 46.15 46.15 0 00-2.73 16.44q0 11.94 4.54 20.59a32.4 32.4 0 0012.69 13.27 39.84 39.84 0 0035.84.84 28.39 28.39 0 0011.67-11q4.25-7.19 4.24-17.2v-9.76zm215.03 40.81V88.53h51.67v13.96h-34.62v16.76h27.99v13.96h-27.99v16.8h34.7v13.96h-51.75zm101.83-53.3a9 9 0 00-3.54-6.64c-2.09-1.59-5-2.38-8.69-2.38a16.63 16.63 0 00-6.26 1 8.62 8.62 0 00-3.83 2.78 6.74 6.74 0 00-1.33 4 6.2 6.2 0 00.79 3.29 7.27 7.27 0 002.4 2.45 16.54 16.54 0 003.7 1.79 40.14 40.14 0 004.64 1.31l6.63 1.54a47.19 47.19 0 019.45 3.08 27.46 27.46 0 017.2 4.68 18.84 18.84 0 014.58 6.39 20.37 20.37 0 011.61 8.29 20.65 20.65 0 01-3.54 12.11 22.56 22.56 0 01-10.15 7.85 41.31 41.31 0 01-15.93 2.76 42.69 42.69 0 01-16.17-2.81 23.22 23.22 0 01-10.72-8.48q-3.83-5.66-4-14.12h16.43a10.68 10.68 0 007.05 9.94 19.37 19.37 0 007.24 1.26 18.44 18.44 0 006.66-1.09 10 10 0 004.33-3 7.22 7.22 0 001.57-4.48 6.16 6.16 0 00-1.42-4 10.86 10.86 0 00-4.14-2.81 42.07 42.07 0 00-6.89-2.14l-8.07-1.95q-9.65-2.3-15.23-7.26t-5.54-13.44a19.86 19.86 0 013.72-12.12 24.74 24.74 0 0110.33-8.11 36.74 36.74 0 0115-2.91 35.62 35.62 0 0114.92 2.91 23.43 23.43 0 019.91 8.14 21.54 21.54 0 013.6 12.12zm-113.99 53.3h-16.87v-57.35l-1.73-.02-17.04 57.37h-16.86l-16.58-57.37-2.15.02v57.35h-16.87V88.53h28.67l14.48 50.56h1.75l14.48-50.56h28.72v75.44zm-114.66 0h18.27l-25.33-75.43h-23.15l-25.37 75.43h18.3l4.93-16.54h27.42zm-28.43-29.7l8.22-27.65h3.1l8.26 27.65zm278.58-37.76a4 4 0 01-3.67-2.44 4 4 0 010-3.1 4 4 0 01.85-1.27 4.25 4.25 0 011.27-.86 4.15 4.15 0 013.1 0 4.13 4.13 0 011.27.86 4.08 4.08 0 01.86 1.27 4 4 0 010 3.1 4.08 4.08 0 01-.86 1.27 4 4 0 01-1.27.86 4 4 0 01-1.55.31zm0-1.09a2.84 2.84 0 001.47-.39 2.94 2.94 0 001.05-1 2.93 2.93 0 000-2.92 3 3 0 00-1.06-1 2.93 2.93 0 00-2.92 0 3 3 0 00-1 1 2.86 2.86 0 000 2.92 3 3 0 001 1 2.83 2.83 0 001.46.39zm-1.46-1.15V90.6h1.78a1.52 1.52 0 01.69.15 1.13 1.13 0 01.47.42 1.24 1.24 0 01.17.66 1.16 1.16 0 01-.18.66 1 1 0 01-.48.41 1.56 1.56 0 01-.7.14h-1.2v-.72h1a.52.52 0 00.36-.12.5.5 0 00.14-.37.47.47 0 00-.14-.37.52.52 0 00-.36-.12h-.55v2.93zm2.39-1.68l.82 1.68h-1.11l-.75-1.68zM282.41 1.03h17.05v75.44h-17.05zm98.02 37.72q0 12.42-4.71 21a32.67 32.67 0 01-12.79 13.17 38.57 38.57 0 01-36.31 0 32.75 32.75 0 01-12.79-13.2q-4.71-8.66-4.71-21t4.71-21.05a32.67 32.67 0 0112.75-13.14 38.65 38.65 0 0136.31 0 32.67 32.67 0 0112.79 13.17q4.71 8.64 4.71 21.05m-17.35 0a33.35 33.35 0 00-2.23-13 17.47 17.47 0 00-6.33-8 18.57 18.57 0 00-19.45 0 17.57 17.57 0 00-6.35 8 38.59 38.59 0 000 26 17.49 17.49 0 006.35 8 18.57 18.57 0 0019.45 0 17.39 17.39 0 006.33-8 33.4 33.4 0 002.23-13M246.58 50.17l8.76 26.3h18.71l-9.74-28.33h-13.23l-.79-2.44c2.52-.49 6.83-1.25 10.65-3.85a20 20 0 008.75-16.39 24.15 24.15 0 00-3.26-12.75 21.9 21.9 0 00-9.36-8.64 32.56 32.56 0 00-14.64-3H212v75.4h17.06v-26.3zm-.32-15.61a19.35 19.35 0 01-7.26 1.18h-9.94V14.88h9.91a18.68 18.68 0 017.25 1.24 9.12 9.12 0 014.4 3.7 10 10 0 011.5 5.64 9.65 9.65 0 01-1.48 5.55 8.86 8.86 0 01-4.38 3.55M382.04 1.03v14h29.3l.8 2.45c-2.48.48-6.67 1.22-10.43 3.7v55.31h16.87v-61.5h19.62v-14z"></path></svg>
                 </div>
                 <div><p>™ & © 2024 Riot Games, Inc.  League of Legends and all related logos, characters, names and distinctive likenesses thereof are exclusive property of Riot Games, Inc.  All Rights Reserved.</p></div>
                 <div><ul>
@@ -1064,15 +1049,8 @@
                     <li><a href="">Company Information</a></li>
                     <li><a href="">Cookie Preferences</a></li>
                 </ul></div>
-                <div>
-                    <div><img src="Img/pegi-eu.png" alt=""></div>
-                    <div><img src="Img/usk-12.png" alt=""></div>
-                </div>
         </div>
     </footer>
-
-
-    
 
 
     
